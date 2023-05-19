@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches-ignore:
-      - main
+      - master
 
 jobs:
   build:
@@ -23,4 +23,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/diplom:${{ env.BRANCH_NAME }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/market:${{ env.BRANCH_NAME }}
