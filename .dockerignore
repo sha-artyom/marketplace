@@ -1,0 +1,9 @@
+#ignore all
+**
+
+# expect
+!market/**
+!entrypoint.sh
+!manage.py
+!poetry.lock
+!pyproject.toml
